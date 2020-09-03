@@ -5,7 +5,7 @@ interface Props extends RouteProps {
   component: React.ComponentType<RouteComponentProps<any>> | React.ComponentType<any>;
 }
 
-function RouteItem({ ...config }: Props) {
+function RouteItem(config: Props) {
   return <Route {...config} />;
 }
 
