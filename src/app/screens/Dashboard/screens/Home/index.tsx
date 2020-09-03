@@ -2,7 +2,7 @@ import React from 'react';
 
 function Home() {
   return (
-    <div className={styles.app}>
+    <div>
       <span>Home</span>
     </div>
   );
