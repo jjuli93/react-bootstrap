@@ -8,7 +8,6 @@ import RouteItem from './components/RouteItem';
 import styles from './styles.module.scss';
 
 function Routes() {
-
   return (
     <Router>
       <div className={styles.container}>

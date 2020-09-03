@@ -19,7 +19,8 @@ module.exports = {
           '~app': './src/app',
           '~assets': './src/assets',
           '~hooks': './src/app/hooks',
-          '~contexts': './src/app/contexts'
+          '~contexts': './src/app/contexts',
+          '~models': './src/app/models'
         }
       }
     }
