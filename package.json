@@ -29,8 +29,7 @@
     "lint": "./node_modules/eslint/bin/eslint.js src",
     "lint-fix": "./node_modules/eslint/bin/eslint.js src --fix && ./node_modules/stylelint/bin/stylelint.js '**/*.scss' --fix",
     "lint-scss": "./node_modules/stylelint/bin/stylelint.js '**/*.scss'",
-    "lint-diff": "git diff --name-only --cached --relative --diff-filter=ACM | grep \\.js$ | xargs eslint",
-    "coverage-diff": "rescripts test --env=jsdom --coverage --watchAll=false --changedSince=development"
+    "lint-diff": "git diff --name-only --cached --relative --diff-filter=ACM | grep \\.js$ | xargs eslint"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -60,11 +59,8 @@
     "@types/react-test-renderer": "^16.9.3",
     "@types/seamless-immutable": "^7.1.13",
     "@types/webpack-env": "^1.15.2",
-    "aws-deploy-script-fe": "^1.0.8",
     "chalk": "^3.0.0",
     "env-cmd": "^10.1.0",
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.4",
     "eslint-config-wolox": "^3.0.2",
     "eslint-config-wolox-react": "^2.0.1",
     "eslint-config-wolox-typescript": "^1.0.1",
@@ -100,8 +96,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint-diff && npm run lint-scss",
-      "pre-push": "npm run coverage-diff"
+      "pre-commit": "npm run lint-diff && npm run lint-scss"
     }
   }
 }
