@@ -5,7 +5,6 @@ import { AppContainer } from 'react-hot-loader';
 import App from './app';
 import './config/i18n';
 import './scss/application.scss';
-import { register } from './serviceWorker';
 
 const render = () => {
   ReactDOM.render(
@@ -18,8 +17,6 @@ const render = () => {
 
 // Render once
 render();
-
-register();
 
 // Webpack Hot Module Replacement API
 if (module.hot) {
